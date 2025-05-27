@@ -44,7 +44,6 @@ while True:
             cx=int(x1+x2)//2
             cy=int(y1+y2)//2
             label = names[class_id]
-            result = cv2.pointPolygonTest(np.array(area, np.int32), (float(x1), float(y2)), False)
 
             cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 0, 0), 2)
            
