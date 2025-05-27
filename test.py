@@ -39,8 +39,6 @@ while True:
         ids = results[0].boxes.id.cpu().numpy().astype(int)
         boxes = results[0].boxes.xyxy.cpu().numpy().astype(int)
         class_ids = results[0].boxes.cls.int().cpu().tolist()
-        list=[]
-        list1=[]
 
         for track_id, box, class_id in zip(ids, boxes, class_ids):
             x1, y1, x2, y2 = box
