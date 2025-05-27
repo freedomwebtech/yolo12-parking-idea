@@ -20,8 +20,7 @@ cv2.setMouseCallback("RGB", RGB)
 
 
 frame_count = 0
-area=[(330,323),(333,388),(997,399),(982,335)]
-area1=[(21,408),(9,594),(414,593),(796,568),(735,411),(302,397)]
+
 
 while True:
     ret, frame = cap.read()
