@@ -32,7 +32,7 @@ while True:
     if frame_count % 3 != 0:
         continue
 
-    frame = cv2.resize(frame, (1020,600))
+    frame = cv2.resize(frame, (1020,900))
     results = model.track(frame, persist=True)
 
     if results[0].boxes.id is not None:
